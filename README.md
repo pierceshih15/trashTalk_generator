@@ -21,6 +21,6 @@
 
 ## Contributor - 專案開發人員
 
-> [Pierce Shih] (https://github.com/pierceshih15)
+> [Pierce Shih](https://github.com/pierceshih15)
 
 
