@@ -3,7 +3,7 @@
 生活中都有許多煩惱，也有專屬不同職業的日常幹話，就讓我們講講幹話，好好抒發壓力吧 Classic markup:
 
 ## ScreenShot - 專案畫面
-![image](https://github.com/pierceshih15/trashTalk_generator/tree/master/public/img/homePage.jpg)
+![image](https://github.com/pierceshih15/trashTalk_generator/blob/master/public/img/homePage.jpg)
 
 ## Features - 產品功能 
 
