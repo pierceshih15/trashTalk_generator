@@ -35,7 +35,6 @@ app.get('/', (req, res) => {
 // Step 5: 載入與使用客製化 JS 演算法，將資料渲染至前端頁面呈現
 app.post('/', (req, res) => {
   const job = req.body.jobs;
-  console.log(job);
   const speech = generateTrashTalk(job);
   res.render('index', {
     job,
