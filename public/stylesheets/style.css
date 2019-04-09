@@ -1,0 +1,8 @@
+body {
+  background-image: url('https://images.unsplash.com/photo-1507807700760-c8b26e28f09e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60');
+  background-size: cover;
+}
+
+.card-img-top {
+  height: 250px;
+}

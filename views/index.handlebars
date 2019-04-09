@@ -1,0 +1,61 @@
+<h2 class="text-center mt-3 py-3 bg-info text-light">你想對誰說幹話?</h2>
+<div class="container mx-auto mt-4">
+  <div class="row">
+    <div class="col-12 col-md-10 mx-auto">
+      <form method="POST" action="/">
+        <!-- Jobs Selection -->
+        <div class="card-columns">
+          <div class="col-4">
+            <div class="card mb-3" style="width: 18rem;">
+              <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
+                class="card-img-top" alt="engineer">
+              <div class="card-body custom-control custom-radio text-center p-3">
+                <input type="radio" class="custom-control-input" name="jobs" value="engineer" id="engineer"
+                  {{#eq job 'engineer'}} checked {{/eq}}>
+                <label class="custom-control-label" for="engineer">工程師</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="card mb-3" style="width: 18rem;">
+              <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
+                class="card-img-top" alt="designer">
+              <div class="card-body custom-control custom-radio text-center p-3">
+                <input type="radio" class="custom-control-input" name="jobs" value="designer" id="designer"
+                  {{#eq job 'designer'}} checked {{/eq}}>
+                <label class="custom-control-label" for="designer">設計師</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="card mb-3" style="width: 18rem;">
+              <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
+                class="card-img-top" alt="entrepreneur">
+              <div class="card-body custom-control custom-radio text-center p-3">
+                <input type="radio" class="custom-control-input" name="jobs" value="entrepreneur" id="entrepreneur"
+                  {{#eq job 'entrepreneur'}} checked {{/eq}}>
+                <label class="custom-control-label" for="entrepreneur">創業家</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-2">
+          <!-- submit button -->
+          <div class="text-center">
+            <button class="btn btn-danger mb-4 py-3" type="submit">產生幹話</button>
+
+            <!-- Message zone -->
+            {{#if speech}}
+            <div class="alert alert-info d-inline-block ml-3" role="alert">
+              <h2 class="text-primary">{{speech}}</h2>
+            </div>
+            {{/if}}
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
